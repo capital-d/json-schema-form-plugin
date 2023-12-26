@@ -36,7 +36,44 @@ export default {
           ),
       },
       options: {
-
+        base: [
+          {
+            sectionTitle: {
+              id: `${pluginId}.name.title`,
+              defaultMessage: "Target",
+            },
+            items: [
+              {
+                intlLabel: {
+                  id: `${pluginId}.name.label`,
+                  defaultMessage: "target",
+                },
+                description: {
+                  id: `${pluginId}.name.label.description`,
+                  defaultMessage:
+                    "Name of data",
+                },
+                name: "options.name",
+                type: "text",
+                value: "",
+              },
+              {
+                intlLabel: {
+                  id: `${pluginId}.schema.label`,
+                  defaultMessage: "schema schema",
+                },
+                description: {
+                  id: `${pluginId}.schema.description`,
+                  defaultMessage:
+                    "Name of attribute in target collection that is going to be displayed as option name",
+                },
+                name: "options.schema",
+                type: "json",
+                value: {},
+              }
+            ],
+          }
+        ],  
       },
     });
 

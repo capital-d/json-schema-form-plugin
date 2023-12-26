@@ -37,7 +37,7 @@ const renderers = [
 const JsonSchemaForm: React.FC<JsonFormProps> = ({
     name,
     attribute: {
-        options: { data, schema = undefined, uischema = undefined },
+        options: { schema = undefined, uischema = undefined },
         type,
     },
     value: initialValue,
