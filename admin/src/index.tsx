@@ -37,43 +37,46 @@ export default {
       },
       options: {
         base: [
+          
+        ],
+        advanced: [
           {
             sectionTitle: {
-              id: `${pluginId}.name.title`,
-              defaultMessage: "Target",
+              id: 'global.settings',
+              defaultMessage: 'Settings',
             },
             items: [
               {
                 intlLabel: {
-                  id: `${pluginId}.name.label`,
-                  defaultMessage: "target",
-                },
-                description: {
-                  id: `${pluginId}.name.label.description`,
-                  defaultMessage:
-                    "Name of data",
-                },
-                name: "options.name",
-                type: "text",
-                value: "",
-              },
-              {
-                intlLabel: {
                   id: `${pluginId}.schema.label`,
-                  defaultMessage: "schema schema",
+                  defaultMessage: "Default schema",
                 },
                 description: {
                   id: `${pluginId}.schema.description`,
                   defaultMessage:
-                    "Name of attribute in target collection that is going to be displayed as option name",
+                    "Default form schema",
                 },
-                name: "options.schema",
+                name: "options.advanced.schema",
+                type: "json",
+                value: {},
+              },
+              {
+                intlLabel: {
+                  id: `${pluginId}.uischema.label`,
+                  defaultMessage: "Default Ui schema",
+                },
+                description: {
+                  id: `${pluginId}.uischema.description`,
+                  defaultMessage:
+                    "Name of data",
+                },
+                name: "options.advanced.uischema",
                 type: "json",
                 value: {},
               }
             ],
           }
-        ],  
+        ]
       },
     });
 
